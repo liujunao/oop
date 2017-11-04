@@ -36,7 +36,7 @@
                     var list = "";
                     $.each($.parseJSON(data), function (num, content) {
                         list += "<tr>";
-                        list += "<td style='width: 30%'><a href='/lookMass?id=" + content.ac_massId + "'>" + content.ac_name + "</a></td>"
+                        list += "<td style='width: 30%'><a href='/lookMass?id=" + content.ac_id + "'>" + content.ac_name + "</a></td>"
                             + "<td style='width: 10%'><a href='/lookAc?type=edit&id=" + content.ac_id + "'><span class='glyphicon glyphicon-edit'></span></a>"
                             + "<td style='width: 10%'><a href='/deleteAc?id=" + content.ac_id + "&type=ma'><span class='glyphicon glyphicon-trash'></span></a></td>"
                             + "<td style='width: 20%'>" + content.ac_address + "</td>"

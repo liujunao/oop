@@ -46,7 +46,7 @@ public class ActivityDAO {
      * @return
      */
     public Map<String,Object> queryById(Activity activity){
-        String sql = "SELECT * FROM activity WHERE ac_id = ?";
+        String sql = "SELECT * FROM activity WHERE ac_massId = ?";
         Object[] objects = new Object[1];
         objects[0] = activity.getAc_id();
         List<Map<String,Object>> list = jdbcUtils.query(sql,objects);
